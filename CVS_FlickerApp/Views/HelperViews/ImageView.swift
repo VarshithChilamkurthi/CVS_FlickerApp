@@ -19,13 +19,6 @@ struct ImageView: View {
         NavigationStack {
             VStack {
                 ScrollView() {
-                    // MARK: - Title Section
-//                    HStack {
-//                        Text("Flicker Images")
-//                            .font(.title3)
-//                            .fontWeight(.bold)
-//                        Spacer()
-//                    }
                     // MARK: - Image grid section
                     LazyVGrid(columns: columns, spacing: 10) {
                         ForEach(viewModel.images, id: \.self) { item in
@@ -50,9 +43,6 @@ struct ImageView: View {
             }
             .navigationTitle("Flicker Images")
             .searchable(text: $viewModel.searchText, prompt: "Search Flicker Images").padding()
-            .onChange(of: viewModel.searchText) {
-                viewModel.fetchImages(url: viewModel.searchedApiUrl)
-            }
             .ignoresSafeArea(edges: .bottom)
         }
     }

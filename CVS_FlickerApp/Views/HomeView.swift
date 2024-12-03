@@ -12,7 +12,6 @@ struct HomeView: View {
         VStack {
             ImageView()
         }
-//        .ignoresSafeArea(edges: .bottom)
     }
 }
 

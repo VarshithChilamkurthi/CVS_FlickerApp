@@ -8,38 +8,37 @@
 import Foundation
 import Combine
 
-class MockAPIManger: NetworkProtocol {
-    
-    var mockError: Error?
-    
+class MockAPIManager: NetworkProtocol {
     func getData<T: Decodable>(url: String, type: T.Type) -> AnyPublisher<T, Error> {
-        let items = [
-            Item(title: "Item 1", link: "Link 1", media: Media(m: "https://picsum.photos/200/300"), description: "Description 1", published: "2024-01-01", author: "Author 1"),
-            Item(title: "Item 2", link: "Link 2", media: Media(m: "https://picsum.photos/200/300"), description: "Description 2", published: "2024-01-02", author: "Author 2"),
-            
-        ]
+        let dummyData: Data
+        let decoder = JSONDecoder()
         
-        // Encode mock data into JSON Data
-        do {
-            let data = try JSONEncoder().encode(items)
+        // Define dummy data
+        if type == ImageInfo.self {
+            let items = [
+                Item(title: "Nature 1", link: "link1", media: Media(m: "https://example.com/nature1.jpg"), description: "Nature 1 description", published: "2024-11-01T10:00:00Z", author: "Author 1"),
+                Item(title: "Sports 1", link: "link2", media: Media(m: "https://example.com/sports1.jpg"), description: "Sports 1 description", published: "2024-11-02T11:00:00Z", author: "Author 2"),
+                Item(title: "Nature 2", link: "link3", media: Media(m: "https://example.com/nature2.jpg"), description: "Nature 2 description", published: "2024-11-03T12:00:00Z", author: "Author 3")
+            ]
+            let imageInfo = ImageInfo(
+                title: "Mock Title",
+                link: "https://example.com",
+                description: "Mock Description",
+                items: items
+            )
             
-            // If there's an error, return a failed publisher
-            if let error = mockError {
-                return Fail(error: error).eraseToAnyPublisher()
-            }
-            
-            // Return a publisher with the encoded data
-            return Just(data)
-                .tryMap { data in
-                    // Decode the data into the expected type (T)
-                    let decodedData = try JSONDecoder().decode(T.self, from: data)
-                    return decodedData
-                }
+            // Encode the dummy data into JSON
+            dummyData = try! JSONEncoder().encode(imageInfo)
+        } else {
+            return Fail(error: URLError(.badURL))
                 .eraseToAnyPublisher()
-            
-        } catch {
-            // If encoding fails, return a failed publisher
-            return Fail(error: error).eraseToAnyPublisher()
         }
+        
+        // Return dummy data wrapped in a publisher
+        return Just(dummyData)
+            .decode(type: T.self, decoder: decoder)
+            .mapError { $0 as Error }
+            .eraseToAnyPublisher()
     }
 }
+

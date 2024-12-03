@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DetailView: View {
     var item: Item?
+    @State private var isShareSheetPresented = false
     
     var body: some View {
         ScrollView {
@@ -51,6 +52,25 @@ struct DetailView: View {
                         .padding(.top, 10)
                 }
             }.padding()
+        }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    isShareSheetPresented = true
+                }) {
+                    Image(systemName: "square.and.arrow.up")
+                }
+            }
+        }
+        .sheet(isPresented: $isShareSheetPresented) {
+            if let item = item {
+                let shareContent = [
+                    item.media?.m ?? "",
+                    Helper.shared.cleanName(title: item.title ?? ""),
+                    Helper.shared.cleanDescription(from: item.description)
+                ]
+                ShareSheet(activityItems: shareContent)
+            }
         }
     }
 }
