@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D20246C82CFF262400CE6234 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20246C52CFF262400CE6234 /* HomeView.swift */; };
+		D20246C92CFF262400CE6234 /* CVS_FlickerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20246C62CFF262400CE6234 /* CVS_FlickerAppApp.swift */; };
+		D20246CA2CFF262400CE6234 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20246C22CFF262400CE6234 /* Preview Assets.xcassets */; };
+		D20246CB2CFF262400CE6234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20246C42CFF262400CE6234 /* Assets.xcassets */; };
+		D20246D12CFF26A700CE6234 /* ImageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20246D02CFF26A700CE6234 /* ImageDataModel.swift */; };
+		D20246D32CFF273900CE6234 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20246D22CFF273900CE6234 /* APIManager.swift */; };
+		D20246D42CFF273900CE6234 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20246D22CFF273900CE6234 /* APIManager.swift */; };
+		D20246D62CFF278400CE6234 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20246D52CFF278400CE6234 /* ImageViewModel.swift */; };
+		D20246D82CFF28EA00CE6234 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20246D72CFF28EA00CE6234 /* ImageView.swift */; };
+		D20246DB2CFF320D00CE6234 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20246DA2CFF320D00CE6234 /* DetailView.swift */; };
+		D2D8A03A2CFF5264008147C9 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D8A0392CFF5264008147C9 /* Helper.swift */; };
+		D2D8A03E2CFF7261008147C9 /* MockAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D8A03D2CFF7261008147C9 /* MockAPIManager.swift */; };
+		D2D8A03F2CFF7261008147C9 /* MockAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D8A03D2CFF7261008147C9 /* MockAPIManager.swift */; };
+		D2D8A0412CFF7284008147C9 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D8A0402CFF7284008147C9 /* NetworkProtocol.swift */; };
+		D2D8A0422CFF7284008147C9 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D8A0402CFF7284008147C9 /* NetworkProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D20246A62CFF156B00CE6234 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D202468D2CFF156800CE6234 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D20246942CFF156800CE6234;
+			remoteInfo = CVS_FlickerApp;
+		};
+		D20246B02CFF156B00CE6234 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D202468D2CFF156800CE6234 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D20246942CFF156800CE6234;
+			remoteInfo = CVS_FlickerApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D20246952CFF156800CE6234 /* CVS_FlickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVS_FlickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20246A52CFF156B00CE6234 /* CVS_FlickerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVS_FlickerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20246AF2CFF156B00CE6234 /* CVS_FlickerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVS_FlickerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20246C22CFF262400CE6234 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D20246C42CFF262400CE6234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D20246C52CFF262400CE6234 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D20246C62CFF262400CE6234 /* CVS_FlickerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVS_FlickerAppApp.swift; sourceTree = "<group>"; };
+		D20246D02CFF26A700CE6234 /* ImageDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataModel.swift; sourceTree = "<group>"; };
+		D20246D22CFF273900CE6234 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		D20246D52CFF278400CE6234 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		D20246D72CFF28EA00CE6234 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		D20246DA2CFF320D00CE6234 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		D2D8A0392CFF5264008147C9 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		D2D8A03D2CFF7261008147C9 /* MockAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIManager.swift; sourceTree = "<group>"; };
+		D2D8A0402CFF7284008147C9 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D20246A82CFF156B00CE6234 /* CVS_FlickerAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CVS_FlickerAppTests;
+			sourceTree = "<group>";
+		};
+		D20246B22CFF156B00CE6234 /* CVS_FlickerAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CVS_FlickerAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D20246922CFF156800CE6234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20246A22CFF156B00CE6234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20246AC2CFF156B00CE6234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D202468C2CFF156800CE6234 = {
+			isa = PBXGroup;
+			children = (
+				D20246C72CFF262400CE6234 /* CVS_FlickerApp */,
+				D20246A82CFF156B00CE6234 /* CVS_FlickerAppTests */,
+				D20246B22CFF156B00CE6234 /* CVS_FlickerAppUITests */,
+				D20246962CFF156800CE6234 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D20246962CFF156800CE6234 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D20246952CFF156800CE6234 /* CVS_FlickerApp.app */,
+				D20246A52CFF156B00CE6234 /* CVS_FlickerAppTests.xctest */,
+				D20246AF2CFF156B00CE6234 /* CVS_FlickerAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D20246C32CFF262400CE6234 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D20246C22CFF262400CE6234 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D20246C72CFF262400CE6234 /* CVS_FlickerApp */ = {
+			isa = PBXGroup;
+			children = (
+				D2D8A0372CFF522A008147C9 /* Commons */,
+				D20246CC2CFF263200CE6234 /* Models */,
+				D20246CD2CFF263E00CE6234 /* Views */,
+				D20246CE2CFF264600CE6234 /* ViewModels */,
+				D20246CF2CFF265C00CE6234 /* Network */,
+				D20246C32CFF262400CE6234 /* Preview Content */,
+				D20246C42CFF262400CE6234 /* Assets.xcassets */,
+				D20246C62CFF262400CE6234 /* CVS_FlickerAppApp.swift */,
+			);
+			path = CVS_FlickerApp;
+			sourceTree = "<group>";
+		};
+		D20246CC2CFF263200CE6234 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D20246D02CFF26A700CE6234 /* ImageDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D20246CD2CFF263E00CE6234 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D20246C52CFF262400CE6234 /* HomeView.swift */,
+				D20246DA2CFF320D00CE6234 /* DetailView.swift */,
+				D20246D92CFF292700CE6234 /* HelperViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D20246CE2CFF264600CE6234 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D20246D52CFF278400CE6234 /* ImageViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D20246CF2CFF265C00CE6234 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D20246D22CFF273900CE6234 /* APIManager.swift */,
+				D2D8A03D2CFF7261008147C9 /* MockAPIManager.swift */,
+				D2D8A0402CFF7284008147C9 /* NetworkProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D20246D92CFF292700CE6234 /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				D20246D72CFF28EA00CE6234 /* ImageView.swift */,
+			);
+			path = HelperViews;
+			sourceTree = "<group>";
+		};
+		D2D8A0372CFF522A008147C9 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				D2D8A0392CFF5264008147C9 /* Helper.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D20246942CFF156800CE6234 /* CVS_FlickerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D20246B92CFF156B00CE6234 /* Build configuration list for PBXNativeTarget "CVS_FlickerApp" */;
+			buildPhases = (
+				D20246912CFF156800CE6234 /* Sources */,
+				D20246922CFF156800CE6234 /* Frameworks */,
+				D20246932CFF156800CE6234 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CVS_FlickerApp;
+			packageProductDependencies = (
+			);
+			productName = CVS_FlickerApp;
+			productReference = D20246952CFF156800CE6234 /* CVS_FlickerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D20246A42CFF156B00CE6234 /* CVS_FlickerAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D20246BC2CFF156B00CE6234 /* Build configuration list for PBXNativeTarget "CVS_FlickerAppTests" */;
+			buildPhases = (
+				D20246A12CFF156B00CE6234 /* Sources */,
+				D20246A22CFF156B00CE6234 /* Frameworks */,
+				D20246A32CFF156B00CE6234 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D20246A72CFF156B00CE6234 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D20246A82CFF156B00CE6234 /* CVS_FlickerAppTests */,
+			);
+			name = CVS_FlickerAppTests;
+			packageProductDependencies = (
+			);
+			productName = CVS_FlickerAppTests;
+			productReference = D20246A52CFF156B00CE6234 /* CVS_FlickerAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D20246AE2CFF156B00CE6234 /* CVS_FlickerAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D20246BF2CFF156B00CE6234 /* Build configuration list for PBXNativeTarget "CVS_FlickerAppUITests" */;
+			buildPhases = (
+				D20246AB2CFF156B00CE6234 /* Sources */,
+				D20246AC2CFF156B00CE6234 /* Frameworks */,
+				D20246AD2CFF156B00CE6234 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D20246B12CFF156B00CE6234 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D20246B22CFF156B00CE6234 /* CVS_FlickerAppUITests */,
+			);
+			name = CVS_FlickerAppUITests;
+			packageProductDependencies = (
+			);
+			productName = CVS_FlickerAppUITests;
+			productReference = D20246AF2CFF156B00CE6234 /* CVS_FlickerAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D202468D2CFF156800CE6234 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					D20246942CFF156800CE6234 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					D20246A42CFF156B00CE6234 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = D20246942CFF156800CE6234;
+					};
+					D20246AE2CFF156B00CE6234 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = D20246942CFF156800CE6234;
+					};
+				};
+			};
+			buildConfigurationList = D20246902CFF156800CE6234 /* Build configuration list for PBXProject "CVS_FlickerApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D202468C2CFF156800CE6234;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D20246962CFF156800CE6234 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D20246942CFF156800CE6234 /* CVS_FlickerApp */,
+				D20246A42CFF156B00CE6234 /* CVS_FlickerAppTests */,
+				D20246AE2CFF156B00CE6234 /* CVS_FlickerAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D20246932CFF156800CE6234 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20246CA2CFF262400CE6234 /* Preview Assets.xcassets in Resources */,
+				D20246CB2CFF262400CE6234 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20246A32CFF156B00CE6234 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20246AD2CFF156B00CE6234 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D20246912CFF156800CE6234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20246D82CFF28EA00CE6234 /* ImageView.swift in Sources */,
+				D20246D42CFF273900CE6234 /* APIManager.swift in Sources */,
+				D2D8A0412CFF7284008147C9 /* NetworkProtocol.swift in Sources */,
+				D2D8A03F2CFF7261008147C9 /* MockAPIManager.swift in Sources */,
+				D20246D62CFF278400CE6234 /* ImageViewModel.swift in Sources */,
+				D20246DB2CFF320D00CE6234 /* DetailView.swift in Sources */,
+				D20246C82CFF262400CE6234 /* HomeView.swift in Sources */,
+				D20246D12CFF26A700CE6234 /* ImageDataModel.swift in Sources */,
+				D20246C92CFF262400CE6234 /* CVS_FlickerAppApp.swift in Sources */,
+				D2D8A03A2CFF5264008147C9 /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20246A12CFF156B00CE6234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D8A0422CFF7284008147C9 /* NetworkProtocol.swift in Sources */,
+				D20246D32CFF273900CE6234 /* APIManager.swift in Sources */,
+				D2D8A03E2CFF7261008147C9 /* MockAPIManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20246AB2CFF156B00CE6234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D20246A72CFF156B00CE6234 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D20246942CFF156800CE6234 /* CVS_FlickerApp */;
+			targetProxy = D20246A62CFF156B00CE6234 /* PBXContainerItemProxy */;
+		};
+		D20246B12CFF156B00CE6234 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D20246942CFF156800CE6234 /* CVS_FlickerApp */;
+			targetProxy = D20246B02CFF156B00CE6234 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D20246B72CFF156B00CE6234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D20246B82CFF156B00CE6234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D20246BA2CFF156B00CE6234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CVS_FlickerApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.varshith.dev.CVS-FlickerApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D20246BB2CFF156B00CE6234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CVS_FlickerApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.varshith.dev.CVS-FlickerApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D20246BD2CFF156B00CE6234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.varshith.dev.CVS-FlickerAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CVS_FlickerApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CVS_FlickerApp";
+			};
+			name = Debug;
+		};
+		D20246BE2CFF156B00CE6234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.varshith.dev.CVS-FlickerAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CVS_FlickerApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CVS_FlickerApp";
+			};
+			name = Release;
+		};
+		D20246C02CFF156B00CE6234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.varshith.dev.CVS-FlickerAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CVS_FlickerApp;
+			};
+			name = Debug;
+		};
+		D20246C12CFF156B00CE6234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.varshith.dev.CVS-FlickerAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CVS_FlickerApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D20246902CFF156800CE6234 /* Build configuration list for PBXProject "CVS_FlickerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20246B72CFF156B00CE6234 /* Debug */,
+				D20246B82CFF156B00CE6234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D20246B92CFF156B00CE6234 /* Build configuration list for PBXNativeTarget "CVS_FlickerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20246BA2CFF156B00CE6234 /* Debug */,
+				D20246BB2CFF156B00CE6234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D20246BC2CFF156B00CE6234 /* Build configuration list for PBXNativeTarget "CVS_FlickerAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20246BD2CFF156B00CE6234 /* Debug */,
+				D20246BE2CFF156B00CE6234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D20246BF2CFF156B00CE6234 /* Build configuration list for PBXNativeTarget "CVS_FlickerAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20246C02CFF156B00CE6234 /* Debug */,
+				D20246C12CFF156B00CE6234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D202468D2CFF156800CE6234 /* Project object */;
+}
