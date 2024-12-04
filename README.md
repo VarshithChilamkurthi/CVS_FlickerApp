@@ -1,4 +1,4 @@
-Flicker Image Search App - CVS
+<ins> # Flicker Image Search App - CVS </ins>
 
 Demo: 
 https://github.com/user-attachments/assets/bf718f4b-401b-4492-afc4-a2805accc680
