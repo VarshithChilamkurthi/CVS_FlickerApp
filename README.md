@@ -4,7 +4,7 @@ Demo:
 https://github.com/user-attachments/assets/bf718f4b-401b-4492-afc4-a2805accc680
 This is a SwiftUI based iOS app which allows users to search and view images from Flicker.
 
-Features Implemented:
+## Features Implemented:
 * Single or Multi image search - Comma separated
 * Clean 2 column large preview grid layout
 * Detail view with image details along with its dimensions
@@ -14,13 +14,13 @@ Features Implemented:
 * Clean and intuitive search bar with animations
 * Test cases
 
-Home View Features: 
+## Home View Features: 
 * Clean 2 column large image previews
 * Intuitive Search bar with animations
 * Navigation Title
 * Multi tag search - Comma separated
 
-Detail View features: 
+## Detail View features: 
 * Large image display
 * Author name
 * Formatted published date
@@ -29,4 +29,5 @@ Detail View features:
 * Image actual dimensions
 * Share button at top right corner
 
-Core Architecture Used: MVVM and Combine
+## Core Architecture Used: 
+MVVM and Combine
