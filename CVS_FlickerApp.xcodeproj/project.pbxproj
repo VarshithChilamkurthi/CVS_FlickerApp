@@ -18,22 +18,21 @@
 		D20246D82CFF28EA00CE6234 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20246D72CFF28EA00CE6234 /* ImageView.swift */; };
 		D20246DB2CFF320D00CE6234 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20246DA2CFF320D00CE6234 /* DetailView.swift */; };
 		D2D8A03A2CFF5264008147C9 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D8A0392CFF5264008147C9 /* Helper.swift */; };
-		D2D8A03E2CFF7261008147C9 /* MockAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D8A03D2CFF7261008147C9 /* MockAPIManager.swift */; };
-		D2D8A03F2CFF7261008147C9 /* MockAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D8A03D2CFF7261008147C9 /* MockAPIManager.swift */; };
 		D2D8A0412CFF7284008147C9 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D8A0402CFF7284008147C9 /* NetworkProtocol.swift */; };
 		D2D8A0422CFF7284008147C9 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D8A0402CFF7284008147C9 /* NetworkProtocol.swift */; };
 		D2D8A04A2CFF901C008147C9 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D8A0492CFF901C008147C9 /* ShareSheet.swift */; };
+		D2D8A04E2CFFBE68008147C9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D8A04D2CFFBE68008147C9 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D20246A62CFF156B00CE6234 /* PBXContainerItemProxy */ = {
+		D20246B02CFF156B00CE6234 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D202468D2CFF156800CE6234 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D20246942CFF156800CE6234;
 			remoteInfo = CVS_FlickerApp;
 		};
-		D20246B02CFF156B00CE6234 /* PBXContainerItemProxy */ = {
+		D2D8A0512CFFD13F008147C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D202468D2CFF156800CE6234 /* Project object */;
 			proxyType = 1;
@@ -56,9 +55,9 @@
 		D20246D72CFF28EA00CE6234 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		D20246DA2CFF320D00CE6234 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		D2D8A0392CFF5264008147C9 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
-		D2D8A03D2CFF7261008147C9 /* MockAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIManager.swift; sourceTree = "<group>"; };
 		D2D8A0402CFF7284008147C9 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
 		D2D8A0492CFF901C008147C9 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		D2D8A04D2CFFBE68008147C9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -172,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				D20246D22CFF273900CE6234 /* APIManager.swift */,
-				D2D8A03D2CFF7261008147C9 /* MockAPIManager.swift */,
 				D2D8A0402CFF7284008147C9 /* NetworkProtocol.swift */,
 			);
 			path = Network;
@@ -191,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				D2D8A0392CFF5264008147C9 /* Helper.swift */,
+				D2D8A04D2CFFBE68008147C9 /* Constants.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -228,7 +227,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D20246A72CFF156B00CE6234 /* PBXTargetDependency */,
+				D2D8A0522CFFD13F008147C9 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				D20246A82CFF156B00CE6234 /* CVS_FlickerAppTests */,
@@ -341,7 +340,7 @@
 				D20246D82CFF28EA00CE6234 /* ImageView.swift in Sources */,
 				D20246D42CFF273900CE6234 /* APIManager.swift in Sources */,
 				D2D8A0412CFF7284008147C9 /* NetworkProtocol.swift in Sources */,
-				D2D8A03F2CFF7261008147C9 /* MockAPIManager.swift in Sources */,
+				D2D8A04E2CFFBE68008147C9 /* Constants.swift in Sources */,
 				D20246D62CFF278400CE6234 /* ImageViewModel.swift in Sources */,
 				D20246DB2CFF320D00CE6234 /* DetailView.swift in Sources */,
 				D20246C82CFF262400CE6234 /* HomeView.swift in Sources */,
@@ -358,7 +357,6 @@
 			files = (
 				D2D8A0422CFF7284008147C9 /* NetworkProtocol.swift in Sources */,
 				D20246D32CFF273900CE6234 /* APIManager.swift in Sources */,
-				D2D8A03E2CFF7261008147C9 /* MockAPIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,15 +370,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D20246A72CFF156B00CE6234 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D20246942CFF156800CE6234 /* CVS_FlickerApp */;
-			targetProxy = D20246A62CFF156B00CE6234 /* PBXContainerItemProxy */;
-		};
 		D20246B12CFF156B00CE6234 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D20246942CFF156800CE6234 /* CVS_FlickerApp */;
 			targetProxy = D20246B02CFF156B00CE6234 /* PBXContainerItemProxy */;
+		};
+		D2D8A0522CFFD13F008147C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D20246942CFF156800CE6234 /* CVS_FlickerApp */;
+			targetProxy = D2D8A0512CFFD13F008147C9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -568,6 +566,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
@@ -586,6 +585,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;

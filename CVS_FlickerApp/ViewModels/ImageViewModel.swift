@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class ImageViewModel: ObservableObject {
+public class ImageViewModel: ObservableObject {
     @Published var images: [Item] = []
     @Published var searchText = ""
     
@@ -27,7 +27,7 @@ class ImageViewModel: ObservableObject {
                 guard let self = self else { return }
                 let tags = self.processSearchText(searchText)
                 if tags.isEmpty {
-                    self.fetchImages(url: "https://api.flickr.com/services/feeds/photos_public.gne?format=json&nojsoncallback=1&tags=porcupine")
+                    self.fetchImages(url: Constants.API.baseURL.rawValue)
                 } else {
                     self.fetchImagesForMultipleTags(tags: tags)
                 }
@@ -49,7 +49,7 @@ class ImageViewModel: ObservableObject {
         images = []
         let publishers = tags.map { tag in
             APIManger.shared.getData(
-                url: "https://api.flickr.com/services/feeds/photos_public.gne?format=json&nojsoncallback=1&tags=\(tag)",
+                url: Constants.API.emptyBaseURL.rawValue + tag,
                 type: ImageInfo.self
             )
         }
@@ -61,9 +61,9 @@ class ImageViewModel: ObservableObject {
                 .sink { completion in
                     switch completion {
                     case .finished:
-                        print("Finished fetching images for tag")
+                        print(UIStrings.fetchSuccessTag.rawValue)
                     case .failure(let error):
-                        print("Error fetching images: \(error.localizedDescription)")
+                        print("\(UIStrings.fetchFail.rawValue): \(error.localizedDescription)")
                     }
                 } receiveValue: { [weak self] result in
                     guard let self = self else { return }
@@ -75,20 +75,57 @@ class ImageViewModel: ObservableObject {
         }
     }
     
-    /// Fetches images for a single URL
+    // Fetches images for a single URL
     func fetchImages(url: String) {
         APIManger.shared.getData(url: url, type: ImageInfo.self)
             .receive(on: DispatchQueue.main)
             .sink { completion in
                 switch completion {
                 case .finished:
-                    print("Finished fetching images")
+                    print(UIStrings.fetchSuccessTag.rawValue)
                 case .failure(let error):
-                    print("Error fetching images: \(error.localizedDescription)")
+                    print("\(UIStrings.fetchFail.rawValue): \(error.localizedDescription)")
                 }
             } receiveValue: { image in
                 self.images = image.items ?? []
             }
             .store(in: &cancellables)
+    }
+    
+    class MockAPIManager: NetworkProtocol {
+        var mockResponse: ImageInfo?
+        var mockResponses: [ImageInfo] = []
+        var mockError: Error?
+        private var currentResponseIndex = 0
+        
+        func getData<T: Decodable>(url: String, type: T.Type) -> AnyPublisher<T, Error> {
+            // If an error is set, return a failing publisher
+            if let error = mockError {
+                return Fail(error: error).eraseToAnyPublisher()
+            }
+            
+            // Handle multiple responses for multiple tags
+            if !mockResponses.isEmpty {
+                guard currentResponseIndex < mockResponses.count,
+                      let response = mockResponses[currentResponseIndex] as? T else {
+                    return Fail(error: URLError(.badURL)).eraseToAnyPublisher()
+                }
+                
+                currentResponseIndex += 1
+                
+                return Just(response)
+                    .setFailureType(to: Error.self)
+                    .eraseToAnyPublisher()
+            }
+            
+            // Fallback to single response
+            guard let response = mockResponse as? T else {
+                return Fail(error: URLError(.badURL)).eraseToAnyPublisher()
+            }
+            
+            return Just(response)
+                .setFailureType(to: Error.self)
+                .eraseToAnyPublisher()
+        }
     }
 }

@@ -9,6 +9,5 @@ import Foundation
 import Combine
 
 protocol NetworkProtocol {
-    // MARK: - Method Requirements
     func getData<T: Decodable>(url: String, type: T.Type) -> AnyPublisher<T, Error>
 }

@@ -16,16 +16,16 @@ struct DetailView: View {
             VStack(alignment: .leading) {
                 if let item = item {
                     HStack {
-                        Text("Author: \(Helper.shared.cleanName(title: item.author ?? "N/A"))")
+                        Text("Author: \(Helper.shared.cleanName(title: item.author ?? UIStrings.notApplicable.rawValue))")
                             .font(.system(size: 14, weight: .regular, design: .rounded))
                             .foregroundStyle(Color.black)
                         Spacer()
-                        Text(Helper.shared.formattedDate(from: item.published ?? "N/A"))
+                        Text(Helper.shared.formattedDate(from: item.published ?? UIStrings.notApplicable.rawValue))
                             .font(.system(size: 10, weight: .light))
                             .foregroundStyle(Color.gray)
                     }
                     
-                    AsyncImage(url: URL(string: item.media?.m ?? "")) { image in
+                    AsyncImage(url: URL(string: item.media?.m ?? UIStrings.notApplicable.rawValue)) { image in
                         image
                             .resizable()
                             .frame(width: 360, height: 360)
@@ -36,7 +36,7 @@ struct DetailView: View {
                             .frame(height: 220)
                     }
                     
-                    Text(Helper.shared.cleanName(title: item.title ?? "No Title"))
+                    Text(Helper.shared.cleanName(title: item.title ?? UIStrings.notApplicable.rawValue))
                         .font(.title)
                         .fontWeight(.bold)
                         .padding(.top, 10)
@@ -48,7 +48,7 @@ struct DetailView: View {
                         .foregroundColor(.black)
                         .fixedSize(horizontal: false, vertical: true)
                     
-                    Text(Helper.shared.extractImageDimensions(from: item.description) ?? "n/a")
+                    Text(Helper.shared.extractImageDimensions(from: item.description) ?? UIStrings.notApplicable.rawValue)
                         .padding(.top, 10)
                 }
             }.padding()

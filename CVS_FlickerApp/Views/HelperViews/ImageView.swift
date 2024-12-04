@@ -38,11 +38,11 @@ struct ImageView: View {
                     }
                 }
                 .onAppear {
-                    viewModel.fetchImages(url: "https://api.flickr.com/services/feeds/photos_public.gne?format=json&nojsoncallback=1&tags=porcupine")
+                    viewModel.fetchImages(url: Constants.API.baseURL.rawValue)
                 }
             }
-            .navigationTitle("Flicker Images")
-            .searchable(text: $viewModel.searchText, prompt: "Search Flicker Images").padding()
+            .navigationTitle(UIStrings.flickrSearchTitle.rawValue)
+            .searchable(text: $viewModel.searchText, prompt: UIStrings.searchImagesPlaceholder.rawValue).padding()
             .ignoresSafeArea(edges: .bottom)
         }
     }
