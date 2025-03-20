@@ -18,7 +18,6 @@ class ImageViewModelTests: XCTestCase {
         cancellables.removeAll()
         super.tearDown()
     }
-    
     // Test successful image fetch with multiple tags
     func testFetchImagesForMultipleTags() {
         // Prepare mock data
