@@ -4,7 +4,6 @@
 ![image](https://github.com/user-attachments/assets/94119483-2933-4d72-8885-c4af18d953c3)
 ![image](https://github.com/user-attachments/assets/4ce4d6c2-5042-4558-b021-38e989e20988)
 
-
 Video Demo: https://github.com/user-attachments/assets/bf718f4b-401b-4492-afc4-a2805accc680
 This is a SwiftUI based iOS app which allows users to search and view images from Flicker.
 
