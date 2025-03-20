@@ -50,6 +50,7 @@ struct DetailView: View {
                     
                     Text(Helper.shared.extractImageDimensions(from: item.description) ?? UIStrings.notApplicable.rawValue)
                         .padding(.top, 10)
+                    
                 }
             }.padding()
         }
